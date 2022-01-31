@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../public/icons/ceu-estrelado.png');
+  background-repeat: repeat;
+  background-size: 30%;
+  background-attachment: fixed;
+  background-color: #242A37;
 }
 
 code {

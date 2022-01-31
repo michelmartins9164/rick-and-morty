@@ -1,0 +1,180 @@
+.Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.ContainerCard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+.CardStatus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.Article {
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.Article img {
+    border: 2px inset #8BEA30;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    transform: translate(-50%, -50%);
+}
+
+.CardArticle {
+    background-color: #232323;
+}
+
+.CardArticle img {
+    width: 120px;
+    height: 120px;
+
+    left: 40%;
+    top: 36%;
+    transform: translate(-90%, -30%);
+}
+
+.DescriptionPerson {
+    text-align: center;
+    border-radius: 22px;
+    padding-top: 20px;
+    width: 300px;
+    margin-top: 160px;
+}
+.DescriptionPerson a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to left,#2bff00, #ffbb00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    font-weight: 600;
+    user-select: none;
+}
+.TitleName h1 {
+    text-align: center;
+    text-decoration: none; 
+    color: #000;
+    background-image: linear-gradient(to left,#2bff00, #ffbb00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.DescriptionPerson a:hover {
+    background-image: linear-gradient(to left,#7bff00, #fffb00);
+}
+
+.DescriptionStatus {
+    color: rgb(255, 255, 255);
+}
+
+.Characteristics {
+    margin-top: -170px;
+    text-align: left;
+}
+
+.TitleDescription, .DatasLocation  {
+    background-image: linear-gradient(#ffffff, #a9ff9e);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.DatasLocation {
+    margin-left: 12px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+
+.ItemsDescription{
+    align-items: center;
+    column-gap: 5px;  
+    font-size: 1em;
+    display: flex;
+    background-image: linear-gradient(to top,#ffffff, #c1fdd5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Close {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    background-image: linear-gradient(#ff0000, #ffffff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    right: 0;
+}
+
+.Species {
+    text-align: center;
+}
+
+.Alive::before {
+    content: ' ';
+    width: 23px;
+    height: 23px;
+    margin-right: auto;
+    display: flex;
+    background-image: url('../../../public/icons/iconAlive.svg');
+    background-size: cover;
+}
+.Dead::before {
+    content: ' ';
+    width: 23px;
+    height: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-image: url('../../../public/icons/iconDead.svg');
+    background-size: cover;
+}
+.Unknown::before {
+    content: ' ';
+    width: 23px;
+    height: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-image: url('../../../public/icons/iconInterrogation.svg');
+    background-size: cover;
+}
+
+@media screen and (min-width:720px) {
+    .Container {
+        display: grid;
+        grid-template-columns: 320px 320px;
+        justify-content: space-around;
+    }
+
+}
+@media screen and (min-width:1000px) {
+    .Container {
+        display: grid;
+        grid-template-columns: 320px 320px 320px;
+        justify-content: space-around;
+    }
+}
