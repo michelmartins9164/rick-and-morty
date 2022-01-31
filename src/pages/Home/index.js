@@ -31,11 +31,13 @@ export default class Home extends Component {
                 return(
                     <article key={item.id} className="Article">
                         <div>
-                        <Link to={`/person/${item.id}`}><img src={item.image} alt="image capa"/></Link>
+                        <Link to={`/person/${item.id}`}>
+                            <img src={item.image} alt="capa"/>
+                        </Link>
                         </div>
                         
                         <div className="DescriptionPerson">
-                            <a>{item.name}</a>
+                            <h1>{item.name}</h1>
                             <div className="DescriptionStatus">
                                 <h2 className="Species">{item.species}</h2>
                             </div>

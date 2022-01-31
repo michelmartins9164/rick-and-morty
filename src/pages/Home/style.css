@@ -59,7 +59,7 @@
     width: 300px;
     margin-top: 160px;
 }
-.DescriptionPerson a {
+.DescriptionPerson h1 {
     text-decoration: none;
     color: rgb(0, 0, 0);
     background-image: linear-gradient(to left,#2bff00, #ffbb00);
@@ -80,7 +80,7 @@
     font-weight: 600;
 }
 
-.DescriptionPerson a:hover {
+.DescriptionPerson h1:hover {
     background-image: linear-gradient(to left,#7bff00, #fffb00);
 }
 

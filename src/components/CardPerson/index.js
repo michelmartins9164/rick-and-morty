@@ -40,7 +40,7 @@ export default class CardPerson extends Component {
             <div className="DescriptionPerson">
               <div className=" CardStatus">
                 <div>
-                  {<img src={this.state.person.image} alt="image capa" />}
+                  {<img src={this.state.person.image} alt="capa"/>}
                 </div>
                 <div className="Characteristics">
                   <div className="ItemsDescription">
