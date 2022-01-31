@@ -17,7 +17,6 @@ export default class Home extends Component {
         .then((r) => r.json())
         .then((json) => {
             this.setState({persons:json.results})
-            console.log(this.state.persons)
         })
     }
 

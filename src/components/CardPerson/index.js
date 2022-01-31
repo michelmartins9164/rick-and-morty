@@ -17,7 +17,6 @@ export default class CardPerson extends Component {
       .then((resp) => resp.json())
       .then((json) => {
         this.setState({ person: json });
-        console.log(json)
 
         fetch(`https://rickandmortyapi.com/api/location/${this.props.id}`)
           .then((resp) => resp.json())
