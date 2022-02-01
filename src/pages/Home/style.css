@@ -57,9 +57,12 @@
     border-radius: 22px;
     padding-top: 20px;
     width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 160px;
 }
 .DescriptionPerson h1 {
+    text-align: center;
     text-decoration: none;
     color: rgb(0, 0, 0);
     background-image: linear-gradient(to left,#2bff00, #ffbb00);
@@ -131,6 +134,13 @@
 
 .Species {
     text-align: center;
+}
+
+.ReturnHome {
+    font-size: 22px;
+    background-image: linear-gradient(#ff0000, #ffffff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .Alive::before {
